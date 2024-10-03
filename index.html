@@ -57,7 +57,7 @@
 </head>
 <body>
     <div class="toolbar">
-        <button onclick="toggleMode()">Modo nocturno</button>
+        <button onclick="toggleMode()">Modo noche</button>
         <label for="fontSize">Tamaño de texto:</label>
         <select id="fontSize" onchange="adjustFontSize()">
             <option value="14px">Pequeño</option>
@@ -1053,9 +1053,9 @@
             const button = document.querySelector('.toolbar button');
             body.classList.toggle('dark-mode');
             if (body.classList.contains('dark-mode')) {
-                button.textContent = 'Modo diurno';
+                button.textContent = 'Modo dia';
             } else {
-                button.textContent = 'Modo nocturno';
+                button.textContent = 'Modo noche';
             }
         }
 
